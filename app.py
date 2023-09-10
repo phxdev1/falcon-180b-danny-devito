@@ -81,8 +81,8 @@ with gr.Blocks() as demo:
             gr.Image("https://i.kym-cdn.com/entries/icons/original/000/038/452/imthetrashman.png", elem_id="banner-image", show_label=False)
         with gr.Column():
             gr.Markdown(
-                """# Falcon-180B Demo
-                **Chat with Danny DeVito. He's only got 1000 tokens to his name so keep your questions short and sweet, just like him!**
+                """# Falcon-180B Danny DeVito
+                **Chat with Danny DeVito backed by the power of 150 billion data points. He's only got 1000 tokens to his name though, so keep your questions short and sweet, just like him!**
                 """
             )
 
