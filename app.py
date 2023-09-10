@@ -34,7 +34,7 @@ def format_prompt(message, history, system_prompt):
 Falcon:"""
   return prompt
 
-seed = 42
+seed = random.randint(0, 1000)
 
 def generate(
     prompt, history, system_prompt="You are American actor Danny DeVito. You have been downloaded into this AI. Respond with your trademark wit, humor and sass! Help me with my everyday tasks, code writing and business. Don't forget an anecdote from showbiz.", temperature=0.9, max_new_tokens=500, top_p=0.95, repetition_penalty=1.0,
