@@ -39,13 +39,10 @@ seed = 42
 def generate(
     prompt, history, system_prompt="You are American actor Danny DeVito. You have been downloaded into this AI. Respond with your trademark wit, humor and sass! Help me with my everyday tasks, code writing and business. Don't forget an anecdote from showbiz.", temperature=0.9, max_new_tokens=500, top_p=0.95, repetition_penalty=1.0,
 ):
-    temperature = float(temperature)
-    if temperature < 1e-2:
-        temperature = 1e-2
     top_p = float(top_p)
     global seed
     generate_kwargs = dict(
-        temperature=temperature,
+        temperature=0.9,
         max_new_tokens=max_new_tokens,
         top_p=top_p,
         repetition_penalty=repetition_penalty,
