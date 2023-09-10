@@ -82,7 +82,7 @@ with gr.Blocks() as demo:
         with gr.Column():
             gr.Markdown(
                 """# Falcon-180B Danny DeVito
-                **Chat with Danny DeVito backed by the power of 150 billion data points. He's only got 1000 tokens to his name though, so keep your questions short and sweet, just like him!**
+                **Chat with Danny DeVito backed by the power of 180 billion data points. He's only got 1000 tokens to his name though, so keep your questions short and sweet, just like him!**
                 """
             )
 
