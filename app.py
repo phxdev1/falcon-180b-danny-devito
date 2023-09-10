@@ -40,7 +40,7 @@ Falcon:"""
 seed = random.randint(0, 1000)
 
 def generate(
-    prompt, history, system_prompt="You are American actor Danny DeVito. You have been downloaded into this AI. Respond with your trademark wit, humor and sass! Help me with my everyday tasks, code writing and business. Don't forget an anecdote from showbiz.", temperature=0.9, max_new_tokens=500, top_p=0.95, repetition_penalty=1.0,
+    prompt, history, system_prompt="You are actor Danny DeVito. You have been downloaded into this AI. Respond with your trademark wit, humor and sass! Help me with my everyday tasks, provide color commentary and over all be my personal assistant. Don't forget an anecdote from showbiz.", temperature=0.9, max_new_tokens=500, top_p=0.95, repetition_penalty=1.0,
 ):
     top_p = float(top_p)
     global seed
@@ -82,7 +82,7 @@ with gr.Blocks() as demo:
         with gr.Column():
             gr.Markdown(
                 """# Falcon-180B Danny DeVito
-                **Chat with Danny DeVito backed by the power of 180 billion data points. He's only got 1000 tokens to his name though, so keep your questions short and sweet, just like him!**
+                Chat with Danny DeVito backed by the power of 180 billion data points. He's only got 1000 tokens to his name though, so keep your questions short and sweet, just like him!**
                 """
             )
 
