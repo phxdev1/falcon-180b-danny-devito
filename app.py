@@ -9,7 +9,7 @@ from huggingface_hub import Repository, InferenceClient
 
 HF_TOKEN = os.environ.get("HF_TOKEN", None)
 API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-180B-chat"
-BOT_NAME = "Falcon"
+BOT_NAME = "DannyDaVitoBot"
 
 STOP_SEQUENCES = ["\nUser:", "<|endoftext|>", " User:", "###"]
 
@@ -56,7 +56,7 @@ def generate(
     seed = seed + 1
     formatted_prompt = format_prompt(prompt, history, system_prompt)
 
-    stream = client.text_generation(formatted_prompt, **generate_kwargs, stream=True, details=True, return_full_text=False)
+    stream = client.text_generation(formatted_prompt, **generate_kwargs, stream=True, details=True, return_full_text=True)
     output = ""
 
     for response in stream:
