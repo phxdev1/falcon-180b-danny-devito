@@ -82,7 +82,7 @@ with gr.Blocks() as demo:
         with gr.Column():
             gr.Markdown(
                 """# Falcon-180B Demo
-                **Chat with [Falcon-180B-Chat](https://huggingface.co/tiiuae/falcon-180b-chat), brainstorm ideas, discuss your holiday plans, and more!**
+                **Chat with chat with Danny DeVito. He's only got 1000 tokens to his name so keep your questions short and sweet, just like him!**
                 """
             )
 
