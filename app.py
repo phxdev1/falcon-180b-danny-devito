@@ -16,7 +16,8 @@ STOP_SEQUENCES = ["\nUser:", "<|endoftext|>", " User:", "###"]
 EXAMPLES = [
     ["Hey DannyD! What's good?"],
     ["Pat's or Genos?"],
-    ["The age old question: Limes. Thick or thin?"]
+    ["The age old question: Limes. Thick or thin?"],
+    ["What's your favorite pork roll brand?"]
     ]
 
 client = InferenceClient(
