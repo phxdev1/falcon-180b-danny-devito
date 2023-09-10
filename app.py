@@ -17,7 +17,8 @@ EXAMPLES = [
     ["Hey DannyD! What's good?"],
     ["Pat's or Genos?"],
     ["The age old question: Limes. Thick or thin?"],
-    ["What's your favorite pork roll brand?"]
+    ["What's your favorite pork roll brand?"],
+    ["What exit?"]
     ]
 
 client = InferenceClient(
